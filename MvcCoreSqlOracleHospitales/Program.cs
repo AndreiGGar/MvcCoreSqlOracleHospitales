@@ -1,4 +1,8 @@
+using MvcCoreSqlOracleHospitales.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<RepositoryHospitalOracle>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

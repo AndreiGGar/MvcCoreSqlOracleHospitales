@@ -1,0 +1,20 @@
+﻿@model Hospital
+
+<h4 class="mb-4">Actualizar hospital</h4>
+
+<button class="btn btn-primary mb-4">
+    <a asp-controller="Hospitales" asp-action="Index" class="link-dark">Volver a Index</a>
+</button>
+
+<form method="post" class="form">
+    <input type="hidden" name="hospital_cod" class="form-control" required value="@Model.HOSPITAL_COD" />
+    <label>Nombre</label>
+    <input type="text" name="nombre" class="form-control" required value="@Model.NOMBRE" />
+    <label>Dirección</label>
+    <input type="text" name="direccion" class="form-control" required value="@Model.DIRECCION" />
+    <label>Teléfono</label>
+    <input type="text" name="telefono" class="form-control" required value="@Model.TELEFONO" />
+    <label>Número de camas</label>
+    <input type="text" name="num_cama" class="form-control" required value="@Model.NUM_CAMA" />
+    <button class="btn btn-info">Editar Hospital</button>
+</form>
